@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// import './index.css';
+import './assets/css/bastemp.min.css';
+import './assets/css/styles.min.css';
+
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 

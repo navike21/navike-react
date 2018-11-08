@@ -1,0 +1,41 @@
+@import _header
+@import _variables
+@import _menu
+
+body
+  font-family: $principalFont
+  color: $grayColor
+  background-color: $whiteColor
+
+.portada
+  background-color: $grisColor
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 5vw
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 )
+.laptop_wrap
+  position: relative
+.laptop
+  filter: blur(2px)
+  transition: all ease-in-out .3s
+.laptop:hover
+  filter: blur(0px)
+.phone
+  position: absolute
+  width: 20%
+  bottom: 0
+  right: 0
+  left: 0
+  margin: auto
+
+@media all and (min-width: 1024px)
+  .menu
+    position: fixed

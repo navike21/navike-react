@@ -1,0 +1,127 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 100px;
+  z-index: 100;
+}
+
+@media all and (min-width: 1024px) {
+  header {
+    height: 7vw;
+  }
+}
+
+/*Principal fonts*/
+@media all and (min-width: 1px) {
+  .wrap_menu {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    z-index: 999;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #253243;
+  }
+  .menu li a {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #ffffff;
+  }
+  .menu li a i {
+    font-size: 1.8rem;
+  }
+  .menu li a span {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .wrap_menu {
+    display: block;
+  }
+  .wrapp {
+    overflow: hidden;
+  }
+  .menu {
+    height: auto;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .menu li a {
+    text-align: left;
+    color: #000000;
+  }
+  .menu li a i {
+    display: none;
+  }
+  .menu li a span {
+    display: block;
+  }
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #4D4D4D;
+  background-color: #ffffff;
+}
+
+.portada {
+  background-color: #E4E4E4;
+  position: relative;
+}
+
+.portada::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+.laptop_wrap {
+  position: relative;
+}
+
+.laptop {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.laptop:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.phone {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@media all and (min-width: 1024px) {
+  .menu {
+    position: fixed;
+  }
+}
