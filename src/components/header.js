@@ -31,24 +31,20 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div> 
-        <header className="w_90 w_91_desktop section_middle_justify">
-          <Link to="./" className="w_13_desktop img_medium_mobile">
-            <img src={Logo} alt="Logo navike" className="w_100" />
-          </Link>
-          <nav className="align_right">
-            <div className="wrap_menu">
-              <div className="font_semibold blackColor section_middle_right">
-                <i className="fas fa-bars font_medium"></i> &nbsp;&nbsp;MENU
-              </div>
-            </div>
-          </nav>
-        </header>
-        <ul className="menu w_100 w_20_desktop active_menu section_middle_center">
+      <header className="section_middle_justify">
+        <Link to="/" className="w_11_desktop img_medium_mobile">
+          <img src={Logo} alt="Logo navike" className="w_100" />
+        </Link>
+        <button className="icon_menu font_semibold blueColor">
+          <i className="fas fa-bars font_big"></i>
+        </button>
+        <nav className="align_right">
+        </nav>
+        <ul className="menu section_middle_center">
           <MenuLink active={true} to="/" label="Home" />
           <MenuLink to="/about" label="About" />
         </ul>
-      </div>
+      </header>
     )
   }
 }
