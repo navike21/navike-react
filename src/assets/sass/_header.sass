@@ -1,9 +1,46 @@
-.icon_menu
-  border: none
-  background: none
-  position: fixed
-  top: 0
-  bottom: 0
-  left: 1vw
-  margin: auto
-  z-index: 99
+@media all and (min-width: 1px)
+  .icon_menu
+    border: none
+    background: none
+    position: fixed
+    top: 20px
+    right: 20px
+    z-index: 101
+
+  .logo
+    margin: 10px 20px
+    position: relative
+    z-index: 102
+
+  .menu
+    margin: 1vw
+
+  .rss_icons
+    svg
+      width: auto
+      height: 2vw
+      fill: $grayColor4
+      transition: all ease-in-out .3s
+
+  .rss_icons:hover
+    svg
+      fill: $grayColor3
+      transition: all ease-in-out .3s
+  
+  aside
+    position: absolute
+    right: 4vw
+    bottom: 4vw
+    ul
+      li
+        padding: 0 .5vw
+
+@media all and (min-width: 1100px)
+  .icon_menu
+    bottom: 0
+    left: 1vw
+    right: initial
+    top: 0
+  .logo
+    margin: auto
+    margin: 1vw
