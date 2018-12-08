@@ -16,7 +16,7 @@ function CustomLinkExample() {
         <div className="wrapp w_100">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+          <Route path="/about-me" component={About} />
           <Route component={NoMatch} />
         </Switch>
         </div>
