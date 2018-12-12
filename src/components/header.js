@@ -47,8 +47,8 @@ export default class Header extends Component {
 
   render() {
     return (
-      <header className="section_middle_justify">
-        <Link to="/" className="w_11_desktop img_medium_mobile logo" onClick={this.showMenuLogo}>
+      <header className="section_middle_justify w_100">
+        <Link to="/" className="w_10_desktop logo" onClick={this.showMenuLogo}>
           <img src={Logo} alt="Logo navike" className="w_100" />
         </Link>
         <button className="icon_menu font_semibold blueColor" onClick={this.showMenu}>

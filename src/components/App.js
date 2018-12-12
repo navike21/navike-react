@@ -7,11 +7,12 @@ import {
 
 import Header from "./header";
 import Home from "./home/home";
+import About from "./about/about";
 
 function CustomLinkExample() {
   return (
     <Router>
-      <div className="w_100">
+      <div className="w_100 section_middle_center">
         <Header />
         <div className="wrapp w_100">
         <Switch>
@@ -25,13 +26,13 @@ function CustomLinkExample() {
   );
 }
 
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
+// function About() {
+//   return (
+//     <div>
+//       <h2>About</h2>
+//     </div>
+//   );
+// }
 
 function NoMatch({ location }) {
   return (
