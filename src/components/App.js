@@ -26,19 +26,11 @@ function CustomLinkExample() {
   );
 }
 
-// function About() {
-//   return (
-//     <div>
-//       <h2>About</h2>
-//     </div>
-//   );
-// }
-
 function NoMatch({ location }) {
   return (
     <div>
       <h3>
-        Error 404
+        Error 404 :v
       </h3>
     </div>
   );
